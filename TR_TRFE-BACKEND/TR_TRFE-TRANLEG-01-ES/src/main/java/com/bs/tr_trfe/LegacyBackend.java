@@ -4,7 +4,10 @@ public class LegacyBackend {
 	
 	public static String isVIPClient(String client){
 		
-		return "0";
+		String isVip="0";
+		if(client.equalsIgnoreCase("11111111L"))
+			isVip="1";
+		return isVip;
 		
 	}
 
